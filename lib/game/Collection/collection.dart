@@ -6,7 +6,6 @@ import 'package:flame/components.dart';
 import 'package:global_gamers_challenge/game/game.dart';
 import 'package:global_gamers_challenge/game/player.dart';
 
-enum Collectables {redFish, blueFish,greenFish, plastic,can,net, bin}
 
 
 class Collection extends SpriteAnimationComponent with HasGameRef<MyGame>,
@@ -19,7 +18,6 @@ class Collection extends SpriteAnimationComponent with HasGameRef<MyGame>,
     add(RectangleHitbox());
     debugMode = true;
   }
-  Collectables state = Collectables.plastic;
 
   @override
   FutureOr<void> onLoad() async{
